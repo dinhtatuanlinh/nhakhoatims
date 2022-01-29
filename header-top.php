@@ -1,6 +1,6 @@
 <a name='gotop'></a>
-<div id="closeMobileMenu" class="hide-desktop" onclick='closemenu()'></div>
-<div id="mobile-menu" class="hide-desktop">
+<div id="closeMobileMenu" class="hide-desktop hide-tablet" onclick='closemenu()'></div>
+<div id="mobile-menu" class="hide-desktop hide-tablet">
     <div class="close" onclick='closemenu()'><i class="fa fa-times" aria-hidden="true"></i>
     </div>
     <?php
@@ -45,9 +45,7 @@
 
     <div id="navi">
         <div class="wrapper">
-            <div id="mobile-icon-menu" class="hide-desktop" onclick="openmenu()">
-                <i class="fa fa-bars" aria-hidden="true"></i>
-            </div>
+            
             <div id="logo">
                 <a href="<?php echo get_home_url(); ?>"><img
                         src="<?php echo DTTL_THEME_URL_IMG; ?>/logos/logoWithText.png" alt="jemmia"></a>
@@ -58,7 +56,7 @@
                     $args = array(
                         'menu'                 => '',
                         'container'            => 'nav',
-                        'container_class'      => 'tablet-hide mobile-hide',
+                        'container_class'      => 'hide-mobile',
                         'container_id'         => '',
                         'container_aria_label' => '',
                         'menu_class'           => '',
@@ -78,6 +76,8 @@
                     wp_nav_menu( $args );
                 }
                 ?>
-
+            <div id="mobile-icon-menu" class="hide-desktop hide-tablet" onclick="openmenu()">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
         </div>
     </div>

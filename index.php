@@ -83,7 +83,7 @@ $upload_dir = wp_upload_dir();
         <img src="" alt="" class="background hide">
         <h3>Giới thiệu nha khoa Tims</h3>
         <div class="wrapper g_cols">
-            <div class="cols d_2_cols t_2_cols m_1_cols">
+            <div class="cols d_2_cols t_2_cols m_1_cols center_box">
                 <img src="https://westwaydental.vn/wp-content/uploads/2021/09/Layer-12-1024x683-1.png" alt="">
             </div>
             <div class="cols d_2_cols t_2_cols m_1_cols">
@@ -107,7 +107,7 @@ $upload_dir = wp_upload_dir();
         </div>
         
         <div class="wrapper g_cols g_cols_reverse">
-            <div class="cols d_2_cols t_2_cols m_1_cols">
+            <div class="cols d_2_cols t_2_cols m_1_cols center_box">
                 <img src="https://huynhduymedical.com/Content/img/products/images/huynhduy_medical_actus900.jpg" alt="">
             </div>
             <div class="cols d_2_cols t_2_cols m_1_cols">
@@ -126,7 +126,7 @@ $upload_dir = wp_upload_dir();
         <img src="" alt="" class="background hide">
         <h3>Đội ngũ bác sỹ</h3>
         <div class="wrapper g_cols">
-            <div class="cols d_2_cols t_2_cols m_1_cols">
+            <div class="cols d_2_cols t_2_cols m_1_cols center_box">
                 <img src="https://thumbs.dreamstime.com/b/handsome-cheerful-male-doctor-stock-vector-cartoon-character-set-three-poses-illustration-204326741.jpg" alt="">
             </div>
             <div class="cols d_2_cols t_2_cols m_1_cols">
@@ -205,7 +205,7 @@ $upload_dir = wp_upload_dir();
         <img src="" alt="" class="background hide">
         <h3>cam kết</h3>
         <div class="wrapper g_cols">
-            <div class="cols d_2_cols t_2_cols m_1_cols">
+            <div class="cols d_2_cols t_2_cols m_1_cols center_box">
                 <img src="https://www.franksonnenbergonline.com/wp-content/uploads/2018/01/image_do-you-understand-the-meaning-of-commitment.jpg" alt="">
             </div>
             <div class="cols d_2_cols t_2_cols m_1_cols">
@@ -226,7 +226,7 @@ $upload_dir = wp_upload_dir();
     <div id="blog">
         <div class="wrapper">
             <h2>tin tức</h2>
-            <div class="blog-wrapper">
+            <div class="swiper blog-wrapper">
 
                 <div class="swiper-wrapper">
                     <?php

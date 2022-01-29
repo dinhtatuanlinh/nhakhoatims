@@ -17,10 +17,12 @@ function dttl_register_js(){
         wp_enqueue_script('swiper-bundle');
         wp_register_script('gsap', $jsUrl . '/gsap.min.js', array(), '1.0', true);
         wp_enqueue_script('gsap');
+        wp_register_script('swiper-script', $jsUrl . '/swiper-script.js', array(), '1.0', true);
+        wp_enqueue_script('swiper-script');
         // wp_register_script('icon-on-menu', $jsUrl . '/icon-on-menu.js', array(), '1.0', true);
         // wp_enqueue_script('icon-on-menu');
-        // wp_register_script('open-close-menu', $jsUrl . '/open-close-menu.js', array(), '1.0', true);
-        // wp_enqueue_script('open-close-menu');
+        wp_register_script('open-close-menu', $jsUrl . '/open-close-menu.js', array(), '1.0', true);
+        wp_enqueue_script('open-close-menu');
         // wp_register_script('slider-index', $jsUrl . '/slider-index.js', array(), '1.0', true);
         // wp_enqueue_script('slider-index');
         // wp_register_script('bgkc', $jsUrl . '/bgkc.js', array(), '1.0', true);
@@ -33,8 +35,10 @@ function dttl_register_js(){
         // wp_enqueue_script('bannerSingle');
         // wp_register_script('tagManipulation', $jsUrl . '/tagManipulation.js', array(), '1.0', true);
         // wp_enqueue_script('tagManipulation');
-        // wp_register_script('showHideTopBar', $jsUrl . '/showHideTopBar.js', array(), '1.0', true);
-        // wp_enqueue_script('showHideTopBar');
+        wp_register_script('showHideTopBar', $jsUrl . '/showHideTopBar.js', array(), '1.0', true);
+        wp_enqueue_script('showHideTopBar');
+        wp_register_script('clickToHide', $jsUrl . '/clickToHide.js', array(), '1.0', true);
+        wp_enqueue_script('clickToHide');
     }
     // if(is_page("trum-kim-cuong-si")){
     //     wp_register_script('trumKimCuongSi', $cssUrl . '/trumKimCuongSi.js', array(), '1.0', true);

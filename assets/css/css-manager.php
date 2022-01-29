@@ -12,6 +12,8 @@ function dttl_register_style() {
     wp_enqueue_style('style');
     wp_register_style('icon', $cssUrl . '/icon.css', array(), '1.0');
     wp_enqueue_style('icon');
+    wp_register_style('mobile_menu', $cssUrl . '/mobile_menu.css', array(), '1.0');
+    wp_enqueue_style('mobile_menu');
     // if(!is_page("trum-kim-cuong-si")&&!is_page("trum-kim-cuong-si-thanks")){
 
 

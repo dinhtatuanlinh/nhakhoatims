@@ -1,6 +1,6 @@
 @font-face {
-    font-family: Roboto;
-    src: url(../fonts/Roboto-Regular.ttf);
+    font-family: Dongle;
+    src: url(../fonts/Dongle-Regular.ttf);
 }
 
 * {
@@ -13,6 +13,15 @@
     --border-color: #ccc;
     --text-color: #206A5D;
     /* var(--main-bg-color) */
+}
+.text_color{
+    color: var(--text-color);
+}
+.main_bg_color{
+    background-color: var(--main-bg-color);
+}
+.button_color{
+    background-color: var(--button-color)
 }
 
 html {
@@ -31,9 +40,18 @@ html {
     max-width: 1200px;
     margin: 0 auto;
     box-sizing: border-box;
+    
 }
 .wrapper > img{
     width: 100%;
+}
+.center_box{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.Jus_con_center{
+    justify-content: center !important; 
 }
 .section{
     width: 100%;
@@ -42,7 +60,7 @@ html {
 .section h3{
     text-align: center;
     text-transform: uppercase;
-    font-size: 25px;
+    font-size: 40px;
     color: var(--text-color);
     display: flex;
     align-items: center;
@@ -66,14 +84,14 @@ html {
     text-align: center;
     text-transform: capitalize;
     color: var(--text-color);
-    font-size: 18px;
+    font-size: 32px;
     margin: 5px 0;
 }
 .outstanding {
     border-radius: 8px;
     padding:10px;
     border: 4px solid var(--button-color);
-    font-size: 25px !important;
+    font-size: 40px !important;
 }
 .section .button{
     background-color: var(--button-color);
@@ -92,6 +110,12 @@ html {
     text-align: justify;
     color: var(--text-color);
 }
+.section .text p{
+    margin: 10px
+}
+.section .text ul{
+    margin: 10px
+}
 .background{
     position: absolute;
     left: 0;
@@ -99,8 +123,38 @@ html {
     width: 100%;
     height: 100%;
 }
-.swiper-slide img{
+.swiper {
     width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .g_cols_reverse{
     flex-direction: row-reverse;
@@ -121,7 +175,7 @@ html {
 }
 
 body {
-    font-family: Roboto, "Courier New", Courier, monospace;
+    font-family: Dongle, "Courier New", Courier, monospace;
     background-color: #fff;
     /* background-size: cover; */
     /* background-image: url(../imgs/B1.jpg); */
@@ -129,6 +183,8 @@ body {
     background-attachment: fixed; */
     max-width: 1920px;
     margin: 0 auto;
+    font-size: 25px;
+    line-height: 0.8;
 }
 #upper {
     background: var(--main-bg-color);
@@ -211,7 +267,11 @@ body {
 }
 #top #navi{
     height: 80px;
-    margin-top: 35px;
+    position: fixed;
+    z-index: 100;
+    top: 35px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
 }
 #top #navi .wrapper{
     height: 100%;
@@ -232,7 +292,7 @@ body {
 }
 #top #navi nav ul li{
     list-style: none;
-    padding: 10px 20px;
+    padding: 10px 10px;
 }
 #top #navi nav ul li a{
     text-decoration: none;
@@ -242,19 +302,13 @@ body {
 }
 li > strong{
     color: var(--button-color);
-    font-size: 18px;
+    font-size: 32px;
     font-weight: bold;
 }
-@media only screen and (min-width: 601px) {
-    
+#top #banner {
+    margin-top: 115px
 }
 
-@media only screen and (max-width: 600px) {
-
-    
-}
-
-/* end bảng giá kim cương */
 
 /* ###################################################################################################### */
 
@@ -281,9 +335,7 @@ li > strong{
         width: 100%;
         margin: 10px 0;
     }
-    .Jus_con_center{
-        justify-content: center !important; 
-    }
+
 }
 
 /* end desktop  */
@@ -292,7 +344,7 @@ li > strong{
 
 /* tablet  */
 
-@media screen and (min-width: 600px) and (max-width: 1200px) {
+@media screen and (min-width: 840px) and (max-width: 1200px) {
     .hide-tablet {
         display: none !important;
     }
@@ -323,7 +375,7 @@ li > strong{
 
 /* mobile  */
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 839px) {
     .section{
         padding: 0 5px
     }

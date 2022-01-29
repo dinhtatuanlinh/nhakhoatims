@@ -1,5 +1,5 @@
 <div id="banner">
-    <div class="swiper-container img-banner">
+    <div class="swiper mySwiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <a href="https://jemmia.vn/kim-cuong-sieu-dinh"><img src="https://westwaydental.vn/wp-content/uploads/2021/11/banner-weB2.png" alt="săn kim cương"></a>
