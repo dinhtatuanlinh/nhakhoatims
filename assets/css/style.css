@@ -192,7 +192,7 @@ body {
     overflow: hidden;
     display: flex;
     justify-content: center;
-    position: fixed;
+    position: relative;
     z-index: 100;
     top: 0;
 }
@@ -267,9 +267,9 @@ body {
 }
 #top #navi{
     height: 80px;
-    position: fixed;
+    position: relative;
     z-index: 100;
-    top: 35px;
+
     background-color: rgba(255, 255, 255, 0.5);
     width: 100%;
 }
@@ -305,10 +305,10 @@ li > strong{
     font-size: 32px;
     font-weight: bold;
 }
-#top #banner {
-    margin-top: 115px
-}
 
+footer{
+    border-top: 2px solid var(--main-bg-color);
+}
 
 /* ###################################################################################################### */
 
@@ -318,7 +318,14 @@ li > strong{
     .hide-desktop {
         display: none !important;
     }
-
+    .d_34_cols{
+        width: 74%;
+        margin: 10px 0.5%
+    }
+    .d_14_cols{
+        width: 24%;
+        margin: 10px 0.5%;
+    }
     .d_4_cols {
         width: 24%;
         margin: 10px 0.5%;
@@ -350,6 +357,14 @@ li > strong{
     }
     .section{
         padding: 0 5px
+    }
+    .t_34_cols{
+        width: 74%;
+        margin: 10px 0.5%
+    }
+    .t_14_cols{
+        width: 24%;
+        margin: 10px 0.5%;
     }
     .t_4_cols {
         width: 24%;

@@ -15,8 +15,10 @@ var swiper = new Swiper(".mySwiper", {
     //   prevEl: ".swiper-button-prev",
     // },
 });
+let width = window.innerWidth;
+let spv = width>839 ? 3 : 1;
 let blogWrapper = new Swiper(".blog-wrapper",{
-    slidesPerView: 3,
+    slidesPerView: spv,
     spaceBetween: 30,
     slidesPerGroup: 3,
     loop: true,
