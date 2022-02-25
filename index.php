@@ -19,53 +19,150 @@ $upload_dir = wp_upload_dir();
         <h3>Dịch vụ nha khoa Tims</h3>
         <div class="wrapper g_cols">
             <div class="cols d_4_cols t_4_cols m_1_cols">
-                <img src="https://westwaydental.vn/wp-content/uploads/2021/09/650x433_tong-quat-1200x800.jpg" alt="">
+                <img src="<?php echo DTTL_THEME_URL_IMG; ?>/cao-voi-danh-bong.jpg" alt="">
                 <div class="heading">
-                    nha khoa tổng quát
+                    Cạo vôi đánh bóng
                 </div>
                 <div class="text">
-                    Westway với đội ngũ Bác sĩ chuyên môn cao, chuyên biệt về dịch vụ điều trị. Bác sĩ chuyên khoa Tổng quát được đào tạo chính quy, có nhiều năm kinh nghiệm, cam kết điều trị đúng, đủ và chuẩn quy trình y khoa nghiêm ngặt nhất cho khách hàng của mình.
+                    Với đội ngũ Bác sĩ chuyên môn cao, chuyên biệt về dịch vụ điều trị. Bác sĩ chuyên khoa Tổng quát được đào tạo chính quy, có nhiều năm kinh nghiệm, cam kết điều trị đúng, đủ và chuẩn quy trình y khoa nghiêm ngặt nhất cho khách hàng của mình.
                 </div>
                 <a class="button" href="/">
                     xem thêm
                 </a>
             </div>
             <div class="cols d_4_cols t_4_cols m_1_cols">
-                <img src="https://westwaydental.vn/wp-content/uploads/2021/09/650x433_tong-quat-1200x800.jpg" alt="">
+                <img src="<?php echo DTTL_THEME_URL_IMG; ?>/tram-rang-tham-my.jpg" alt="">
                 <div class="heading">
-                    niềng răng thẩm mỹ
+                    Trám răng thẩm mỹ
                 </div>
                 <div class="text">
-                    Westway với đội ngũ Bác sĩ chuyên môn cao, chuyên biệt về dịch vụ điều trị. Bác sĩ chuyên khoa Tổng quát được đào tạo chính quy, có nhiều năm kinh nghiệm, cam kết điều trị đúng, đủ và chuẩn quy trình y khoa nghiêm ngặt nhất cho khách hàng của mình.
+                    Với đội ngũ Bác sĩ chuyên môn cao, chuyên biệt về dịch vụ điều trị. Bác sĩ chuyên khoa Tổng quát được đào tạo chính quy, có nhiều năm kinh nghiệm, cam kết điều trị đúng, đủ và chuẩn quy trình y khoa nghiêm ngặt nhất cho khách hàng của mình.
                 </div>
                 <a class="button" href="/">
                     xem thêm
                 </a>
             </div>
             <div class="cols d_4_cols t_4_cols m_1_cols">
-                <img src="https://westwaydental.vn/wp-content/uploads/2021/09/650x433_tong-quat-1200x800.jpg" alt="">
+                <img src="<?php echo DTTL_THEME_URL_IMG; ?>/nho-rang.jpg" alt="">
                 <div class="heading">
-                    răng sứ thẩm mỹ
+                    Nhổ răng
                 </div>
                 <div class="text">
-                    Westway với đội ngũ Bác sĩ chuyên môn cao, chuyên biệt về dịch vụ điều trị. Bác sĩ chuyên khoa Tổng quát được đào tạo chính quy, có nhiều năm kinh nghiệm, cam kết điều trị đúng, đủ và chuẩn quy trình y khoa nghiêm ngặt nhất cho khách hàng của mình.
+                    Với đội ngũ Bác sĩ chuyên môn cao, chuyên biệt về dịch vụ điều trị. Bác sĩ chuyên khoa Tổng quát được đào tạo chính quy, có nhiều năm kinh nghiệm, cam kết điều trị đúng, đủ và chuẩn quy trình y khoa nghiêm ngặt nhất cho khách hàng của mình.
                 </div>
                 <a class="button" href="/">
                     xem thêm
                 </a>
             </div>
             <div class="cols d_4_cols t_4_cols m_1_cols">
-                <img src="https://westwaydental.vn/wp-content/uploads/2021/09/650x433_tong-quat-1200x800.jpg" alt="">
+                <img src="<?php echo DTTL_THEME_URL_IMG; ?>/kham-chua-tuy-rang.jpg" alt="">
                 <div class="heading">
-                    trồng răng implant
+                    Khám chữa tủy răng
                 </div>
                 <div class="text">
-                    Westway với đội ngũ Bác sĩ chuyên môn cao, chuyên biệt về dịch vụ điều trị. Bác sĩ chuyên khoa Tổng quát được đào tạo chính quy, có nhiều năm kinh nghiệm, cam kết điều trị đúng, đủ và chuẩn quy trình y khoa nghiêm ngặt nhất cho khách hàng của mình.
+                    Với đội ngũ Bác sĩ chuyên môn cao, chuyên biệt về dịch vụ điều trị. Bác sĩ chuyên khoa Tổng quát được đào tạo chính quy, có nhiều năm kinh nghiệm, cam kết điều trị đúng, đủ và chuẩn quy trình y khoa nghiêm ngặt nhất cho khách hàng của mình.
                 </div>
                 <a class="button" href="/">
                     xem thêm
                 </a>
             </div>
+            <div class="cols d_4_cols t_4_cols m_1_cols">
+                <img src="<?php echo DTTL_THEME_URL_IMG; ?>/tay-trang-rang.jpg" alt="">
+                <div class="heading">
+                    Tẩy trắng răng
+                </div>
+                <div class="text">
+                    Với đội ngũ Bác sĩ chuyên môn cao, chuyên biệt về dịch vụ điều trị. Bác sĩ chuyên khoa Tổng quát được đào tạo chính quy, có nhiều năm kinh nghiệm, cam kết điều trị đúng, đủ và chuẩn quy trình y khoa nghiêm ngặt nhất cho khách hàng của mình.
+                </div>
+                <a class="button" href="/">
+                    xem thêm
+                </a>
+            </div>
+            <div class="cols d_4_cols t_4_cols m_1_cols">
+                <img src="<?php echo DTTL_THEME_URL_IMG; ?>/trong-rang-su.jpg" alt="">
+                <div class="heading">
+                    Trồng răng sứ
+                </div>
+                <div class="text">
+                    Với đội ngũ Bác sĩ chuyên môn cao, chuyên biệt về dịch vụ điều trị. Bác sĩ chuyên khoa Tổng quát được đào tạo chính quy, có nhiều năm kinh nghiệm, cam kết điều trị đúng, đủ và chuẩn quy trình y khoa nghiêm ngặt nhất cho khách hàng của mình.
+                </div>
+                <a class="button" href="/">
+                    xem thêm
+                </a>
+            </div>
+            <div class="cols d_4_cols t_4_cols m_1_cols">
+                <img src="<?php echo DTTL_THEME_URL_IMG; ?>/tram-rang-tham-my.jpg" alt="">
+                <div class="heading">
+                    Mặt dán sứ
+                </div>
+                <div class="text">
+                    Với đội ngũ Bác sĩ chuyên môn cao, chuyên biệt về dịch vụ điều trị. Bác sĩ chuyên khoa Tổng quát được đào tạo chính quy, có nhiều năm kinh nghiệm, cam kết điều trị đúng, đủ và chuẩn quy trình y khoa nghiêm ngặt nhất cho khách hàng của mình.
+                </div>
+                <a class="button" href="/">
+                    xem thêm
+                </a>
+            </div>
+            <div class="cols d_4_cols t_4_cols m_1_cols">
+                <img src="<?php echo DTTL_THEME_URL_IMG; ?>/implant.jpg" alt="">
+                <div class="heading">
+                    Trồng răng implant
+                </div>
+                <div class="text">
+                    Với đội ngũ Bác sĩ chuyên môn cao, chuyên biệt về dịch vụ điều trị. Bác sĩ chuyên khoa Tổng quát được đào tạo chính quy, có nhiều năm kinh nghiệm, cam kết điều trị đúng, đủ và chuẩn quy trình y khoa nghiêm ngặt nhất cho khách hàng của mình.
+                </div>
+                <a class="button" href="/">
+                    xem thêm
+                </a>
+            </div>
+            <div class="cols d_4_cols t_4_cols m_1_cols">
+                <img src="<?php echo DTTL_THEME_URL_IMG; ?>/tram-rang-tham-my.jpg" alt="">
+                <div class="heading">
+                    Răng giả tháo lắp
+                </div>
+                <div class="text">
+                    Với đội ngũ Bác sĩ chuyên môn cao, chuyên biệt về dịch vụ điều trị. Bác sĩ chuyên khoa Tổng quát được đào tạo chính quy, có nhiều năm kinh nghiệm, cam kết điều trị đúng, đủ và chuẩn quy trình y khoa nghiêm ngặt nhất cho khách hàng của mình.
+                </div>
+                <a class="button" href="/">
+                    xem thêm
+                </a>
+            </div>
+            <div class="cols d_4_cols t_4_cols m_1_cols">
+                <img src="<?php echo DTTL_THEME_URL_IMG; ?>/nieng-rang-mac-cai.jpg" alt="">
+                <div class="heading">
+                    Niềng răng mắc cài
+                </div>
+                <div class="text">
+                    Với đội ngũ Bác sĩ chuyên môn cao, chuyên biệt về dịch vụ điều trị. Bác sĩ chuyên khoa Tổng quát được đào tạo chính quy, có nhiều năm kinh nghiệm, cam kết điều trị đúng, đủ và chuẩn quy trình y khoa nghiêm ngặt nhất cho khách hàng của mình.
+                </div>
+                <a class="button" href="/">
+                    xem thêm
+                </a>
+            </div>
+            <div class="cols d_4_cols t_4_cols m_1_cols">
+                <img src="<?php echo DTTL_THEME_URL_IMG; ?>/nieng-rang-trong-suot.jpg" alt="">
+                <div class="heading">
+                    Niềng răng trong suốt
+                </div>
+                <div class="text">
+                    Với đội ngũ Bác sĩ chuyên môn cao, chuyên biệt về dịch vụ điều trị. Bác sĩ chuyên khoa Tổng quát được đào tạo chính quy, có nhiều năm kinh nghiệm, cam kết điều trị đúng, đủ và chuẩn quy trình y khoa nghiêm ngặt nhất cho khách hàng của mình.
+                </div>
+                <a class="button" href="/">
+                    xem thêm
+                </a>
+            </div>
+            <div class="cols d_4_cols t_4_cols m_1_cols">
+                <img src="<?php echo DTTL_THEME_URL_IMG; ?>/kham-tu-van-mien-phi.jpg" alt="">
+                <div class="heading">
+                    Khám tư vấn miễn phí
+                </div>
+                <div class="text">
+                    Với đội ngũ Bác sĩ chuyên môn cao, chuyên biệt về dịch vụ điều trị. Bác sĩ chuyên khoa Tổng quát được đào tạo chính quy, có nhiều năm kinh nghiệm, cam kết điều trị đúng, đủ và chuẩn quy trình y khoa nghiêm ngặt nhất cho khách hàng của mình.
+                </div>
+                <a class="button" href="/">
+                    xem thêm
+                </a>
+            </div>
+
         </div>
     </div>
     <a name='priceTable'></a>
@@ -84,7 +181,7 @@ $upload_dir = wp_upload_dir();
         <h3>Giới thiệu nha khoa Tims</h3>
         <div class="wrapper g_cols">
             <div class="cols d_2_cols t_2_cols m_1_cols center_box">
-                <img src="https://westwaydental.vn/wp-content/uploads/2021/09/Layer-12-1024x683-1.png" alt="">
+                <img src="<?php echo DTTL_THEME_URL_IMG; ?>/11.jpg" alt="">
             </div>
             <div class="cols d_2_cols t_2_cols m_1_cols">
                 <div class="heading outstanding">TIMS Dental - Luôn làm tốt hơn!</div>
@@ -108,14 +205,14 @@ $upload_dir = wp_upload_dir();
         
         <div class="wrapper g_cols g_cols_reverse">
             <div class="cols d_2_cols t_2_cols m_1_cols center_box">
-                <img src="https://huynhduymedical.com/Content/img/products/images/huynhduy_medical_actus900.jpg" alt="">
+                <img src="<?php echo DTTL_THEME_URL_IMG; ?>/22.jpg" alt="">
             </div>
             <div class="cols d_2_cols t_2_cols m_1_cols">
                 <div class="heading outstanding">Trang thiết bị</div>
                 <div class="text">
-                    <p>Westway đầu tư vào công nghệ quét dấu hiện đại nhất thế giới – Máy iTero 5D cho thấy trước kết quả chỉnh nha và theo dõi tiến trình dịch chuyển răng một cách chính xác. Quét dấu toàn hàm chỉ trong vài phút, phát hiện sớm các bệnh lý răng miệng, giúp lưu trữ hồ sơ 3D, đồng thời ứng dụng thuật toán “số hóa nụ cười” tối ưu kế hoạch chỉnh nha nhanh chóng, hiệu quả.</p>
-                    <p>Westway sở hữu máy chụp film CT Cone Beam tối tân – Trợ thủ đắc lực trong điều trị Nha khoa. Chỉ với 1 lần quét soi rõ hàng triệu góc nhìn, chính xác tuyệt đối. Với hình ảnh 3D ưu việt giúp phân tích cấu trúc xương hàm chuẩn xác. Không làm đau, không gây khó chịu, không giữ tia bức xạ trong cơ thể sau chụp như các thiết bị chụp film truyền thống.</p>
-                    <p>Westway chọn trang bị ghế nha khoa Sinius từ hãng Sirona Dentsply. Vì loại ghế cao cấp này có thể điều chỉnh được tốc độ nhanh chậm, đảm bảo độ bền tay khoan, giúp khách hàng có được cảm giác thoải mái, êm dịu, yên tâm trong suốt thời gian chỉnh nha và làm đẹp.</p>
+                    <p>Đầu tư vào công nghệ quét dấu hiện đại nhất thế giới – Máy iTero 5D cho thấy trước kết quả chỉnh nha và theo dõi tiến trình dịch chuyển răng một cách chính xác. Quét dấu toàn hàm chỉ trong vài phút, phát hiện sớm các bệnh lý răng miệng, giúp lưu trữ hồ sơ 3D, đồng thời ứng dụng thuật toán “số hóa nụ cười” tối ưu kế hoạch chỉnh nha nhanh chóng, hiệu quả.</p>
+                    <p>Sở hữu máy chụp film CT Cone Beam tối tân – Trợ thủ đắc lực trong điều trị Nha khoa. Chỉ với 1 lần quét soi rõ hàng triệu góc nhìn, chính xác tuyệt đối. Với hình ảnh 3D ưu việt giúp phân tích cấu trúc xương hàm chuẩn xác. Không làm đau, không gây khó chịu, không giữ tia bức xạ trong cơ thể sau chụp như các thiết bị chụp film truyền thống.</p>
+                    <p>Chọn trang bị ghế nha khoa Sinius từ hãng Sirona Dentsply. Vì loại ghế cao cấp này có thể điều chỉnh được tốc độ nhanh chậm, đảm bảo độ bền tay khoan, giúp khách hàng có được cảm giác thoải mái, êm dịu, yên tâm trong suốt thời gian chỉnh nha và làm đẹp.</p>
                 </div>
             </div>
         </div>
@@ -151,7 +248,7 @@ $upload_dir = wp_upload_dir();
         <h3>giá trị cốt lõi</h3>
         <div class="wrapper g_cols Jus_con_center">
             <div class="cols d_3_cols t_3_cols m_1_cols">
-                <img src="https://westwaydental.vn/wp-content/uploads/2021/09/650x433_tong-quat-1200x800.jpg" alt="">
+                <img src="<?php echo DTTL_THEME_URL_IMG; ?>/Don-gian.jpg" alt="">
                 <div class="heading">
                     Simplicity : Đơn giản
                 </div>
@@ -160,7 +257,7 @@ $upload_dir = wp_upload_dir();
                 </div>
             </div>
             <div class="cols d_3_cols t_3_cols m_1_cols">
-                <img src="https://westwaydental.vn/wp-content/uploads/2021/09/650x433_tong-quat-1200x800.jpg" alt="">
+                <img src="<?php echo DTTL_THEME_URL_IMG; ?>/Thau-cam.jpg" alt="">
                 <div class="heading">
                     Sympathy: Thấu cảm
                 </div>
@@ -169,7 +266,7 @@ $upload_dir = wp_upload_dir();
                 </div>
             </div>
             <div class="cols d_3_cols t_3_cols m_1_cols">
-                <img src="https://westwaydental.vn/wp-content/uploads/2021/09/650x433_tong-quat-1200x800.jpg" alt="">
+                <img src="<?php echo DTTL_THEME_URL_IMG; ?>/Thong-minh.jpg" alt="">
                 <div class="heading">
                     Smart: Thông minh
                 </div>
@@ -178,7 +275,7 @@ $upload_dir = wp_upload_dir();
                 </div>
             </div>
             <div class="cols d_3_cols t_3_cols m_1_cols">
-                <img src="https://westwaydental.vn/wp-content/uploads/2021/09/650x433_tong-quat-1200x800.jpg" alt="">
+                <img src="<?php echo DTTL_THEME_URL_IMG; ?>/Nhanh-chong.jpg" alt="">
                 <div class="heading">
                     Speed: Nhanh chóng
                 </div>
@@ -187,7 +284,7 @@ $upload_dir = wp_upload_dir();
                 </div>
             </div>
             <div class="cols d_3_cols t_3_cols m_1_cols">
-                <img src="https://westwaydental.vn/wp-content/uploads/2021/09/650x433_tong-quat-1200x800.jpg" alt="">
+                <img src="<?php echo DTTL_THEME_URL_IMG; ?>/An-toan.jpg" alt="">
                 <div class="heading">
                     Safety: An toàn
                 </div>
@@ -225,7 +322,7 @@ $upload_dir = wp_upload_dir();
     </div>
     <div id="blog">
         <div class="wrapper">
-            <h2>tin tức</h2>
+            <!-- <h2>tin tức</h2> -->
             <div class="swiper blog-wrapper">
 
                 <div class="swiper-wrapper">
@@ -252,18 +349,18 @@ $upload_dir = wp_upload_dir();
                     <div class="swiper-slide">
 
                         <a href="<?php the_permalink(); ?>">
-                            <img class="lazyload"
+                            <!-- <img class="lazyload"
                                 data-src="<?php  echo get_new_img_url(get_the_post_thumbnail_url(), 400, 400); ?>"
-                                alt="<?php the_title(); ?>">
-                            <div class="blog-title"><?php the_title(); ?></div>
+                                alt="<?php the_title(); ?>"> -->
+                            <!-- <div class="blog-title"><?php the_title(); ?></div> -->
                             <!-- <div class="date">Đăng vào: <?php //echo explode(' ', $blog->post_date)[0] ; ?></div>
                                         <div class="author">Bởi: <?php //the_author_meta( 'user_nicename' , $author_id ); ?> </div> -->
-                            <p class="short"><?php echo explode("\n", wordwrap($except, 150))[0]; ?>...</p>
+                            <!-- <p class="short"><?php echo explode("\n", wordwrap($except, 150))[0]; ?>...</p> -->
 
                         </a>
-                        <a href="<?php the_permalink(); ?>">
+                        <!-- <a href="<?php the_permalink(); ?>">
                             <div class="more">Xem thêm</div>
-                        </a>
+                        </a> -->
 
 
                     </div>

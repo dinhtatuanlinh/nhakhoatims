@@ -167,7 +167,7 @@ html {
 .cols {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     flex-direction: column;
 }
 .cols img{
@@ -269,7 +269,6 @@ body {
     height: 80px;
     position: relative;
     z-index: 100;
-
     background-color: rgba(255, 255, 255, 0.5);
     width: 100%;
 }
@@ -309,7 +308,35 @@ li > strong{
 footer{
     border-top: 2px solid var(--main-bg-color);
 }
-
+.typewriter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.typewriter h2 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    font-size: 50px;
+    animation: 
+      typing 3.5s steps(40, end) infinite,
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
 /* ###################################################################################################### */
 
 /* desktop  */
