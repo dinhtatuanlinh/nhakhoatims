@@ -227,9 +227,7 @@ $upload_dir = wp_upload_dir();
                 <img src="https://thumbs.dreamstime.com/b/handsome-cheerful-male-doctor-stock-vector-cartoon-character-set-three-poses-illustration-204326741.jpg" alt="">
             </div>
             <div class="cols d_2_cols t_2_cols m_1_cols">
-                <div class="heading">
-                    niềng răng thẩm mỹ
-                </div>
+
                 <div class="text">
                     <p>Tại nha khoa TIMS chúng tôi không chỉ có một mà là cả một đội ngũ Y – Bác sĩ cùng nhau lên kế hoạch và điều trị cho khách hàng. Chúng tôi nghiên cứu, thống nhất và đưa ra một kế hoạch điều trị tối ưu có kết quả lâu dài và tiết kiệm chi phí nhất.</p>
                     <p>Đội ngũ Y – Bác sĩ tại nha khoa TIMS còn là người bạn đồng hành tận tâm với quý khách hàng trong suốt quá trình trước và sau điều trị.</p>
