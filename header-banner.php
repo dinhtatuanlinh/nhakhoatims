@@ -2,34 +2,10 @@
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <a href="#"><img src="<?php echo DTTL_THEME_URL_IMG; ?>/0.jpg" alt=""></a>
+                <a href="#"><img src="<?php echo DTTL_THEME_URL_IMG; ?>/anh-bia-website.png" alt=""></a>
+                <h2>TIMS DENTAL</h2>
                 <div class="typewriter">
                     <h2>Sympathy</h2>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <a href="#"><img src="<?php echo DTTL_THEME_URL_IMG; ?>/1.jpg" alt=""></a>
-                <div class="typewriter">
-                    <h2>Safety</h2>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <a href="#"><img src="<?php echo DTTL_THEME_URL_IMG; ?>/2.jpg" alt=""></a>
-                <div class="typewriter">
-                    <h2>Simplicity</h2>
-                </div>
-            </div>
-            
-            <div class="swiper-slide">
-                <a href="#"><img src="<?php echo DTTL_THEME_URL_IMG; ?>/3.jpg" alt=""></a>
-                <div class="typewriter">
-                    <h2>Speed</h2>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <a href="#"><img src="<?php echo DTTL_THEME_URL_IMG; ?>/4.jpg" alt=""></a>
-                <div class="typewriter">
-                    <h2>Smart</h2>
                 </div>
             </div>
         </div>

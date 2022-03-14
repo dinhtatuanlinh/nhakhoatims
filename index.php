@@ -18,160 +18,52 @@ $upload_dir = wp_upload_dir();
         <img src="" alt="" class="background hide">
         <h3>Dịch vụ nha khoa Tims</h3>
         <div class="wrapper g_cols">
+            
+            <?php
+                $args = array(
+                    'post_status' => 'publish',
+                    'post_type' => 'post',
+                    'numberposts'      =>12,
+                    'category'         => 3,
+                    'orderby'    => 'date',
+                    'order' => 'DESC',
+                );
+                $query = new WP_Query( $args );
+
+                // echo '<pre style="color: #fff">';
+                // print_r($blogs[0]);
+                // echo '</pre>';
+                if ( $query->have_posts() ) :
+                    while ($query->have_posts()) : $query->the_post();//phải dùng vòng lặp while để lấy ra đúng bài được chọn
+                    $except = get_the_excerpt();
+            ?>
             <div class="cols d_4_cols t_4_cols m_1_cols">
-                <img src="<?php echo DTTL_THEME_URL_IMG; ?>/cao-voi-danh-bong.jpg" alt="">
+                <img src="<?php  echo get_new_img_url(get_the_post_thumbnail_url(), 400, 400); ?>" alt="<?php the_title(); ?>">
                 <div class="heading">
-                    Cạo vôi đánh bóng
+                    <?php the_title(); ?>
                 </div>
                 <div class="text">
-                    Với đội ngũ Bác sĩ chuyên môn cao, chuyên biệt về dịch vụ điều trị. Bác sĩ chuyên khoa Tổng quát được đào tạo chính quy, có nhiều năm kinh nghiệm, cam kết điều trị đúng, đủ và chuẩn quy trình y khoa nghiêm ngặt nhất cho khách hàng của mình.
+                    <?php echo explode("\n", wordwrap($except, 150))[0]; ?>...
                 </div>
-                <a class="button" href="/">
-                    xem thêm
-                </a>
-            </div>
-            <div class="cols d_4_cols t_4_cols m_1_cols">
-                <img src="<?php echo DTTL_THEME_URL_IMG; ?>/tram-rang-tham-my.jpg" alt="">
-                <div class="heading">
-                    Trám răng thẩm mỹ
-                </div>
-                <div class="text">
-                    Với đội ngũ Bác sĩ chuyên môn cao, chuyên biệt về dịch vụ điều trị. Bác sĩ chuyên khoa Tổng quát được đào tạo chính quy, có nhiều năm kinh nghiệm, cam kết điều trị đúng, đủ và chuẩn quy trình y khoa nghiêm ngặt nhất cho khách hàng của mình.
-                </div>
-                <a class="button" href="/">
-                    xem thêm
-                </a>
-            </div>
-            <div class="cols d_4_cols t_4_cols m_1_cols">
-                <img src="<?php echo DTTL_THEME_URL_IMG; ?>/nho-rang.jpg" alt="">
-                <div class="heading">
-                    Nhổ răng
-                </div>
-                <div class="text">
-                    Với đội ngũ Bác sĩ chuyên môn cao, chuyên biệt về dịch vụ điều trị. Bác sĩ chuyên khoa Tổng quát được đào tạo chính quy, có nhiều năm kinh nghiệm, cam kết điều trị đúng, đủ và chuẩn quy trình y khoa nghiêm ngặt nhất cho khách hàng của mình.
-                </div>
-                <a class="button" href="/">
-                    xem thêm
-                </a>
-            </div>
-            <div class="cols d_4_cols t_4_cols m_1_cols">
-                <img src="<?php echo DTTL_THEME_URL_IMG; ?>/kham-chua-tuy-rang.jpg" alt="">
-                <div class="heading">
-                    Khám chữa tủy răng
-                </div>
-                <div class="text">
-                    Với đội ngũ Bác sĩ chuyên môn cao, chuyên biệt về dịch vụ điều trị. Bác sĩ chuyên khoa Tổng quát được đào tạo chính quy, có nhiều năm kinh nghiệm, cam kết điều trị đúng, đủ và chuẩn quy trình y khoa nghiêm ngặt nhất cho khách hàng của mình.
-                </div>
-                <a class="button" href="/">
-                    xem thêm
-                </a>
-            </div>
-            <div class="cols d_4_cols t_4_cols m_1_cols">
-                <img src="<?php echo DTTL_THEME_URL_IMG; ?>/tay-trang-rang.jpg" alt="">
-                <div class="heading">
-                    Tẩy trắng răng
-                </div>
-                <div class="text">
-                    Với đội ngũ Bác sĩ chuyên môn cao, chuyên biệt về dịch vụ điều trị. Bác sĩ chuyên khoa Tổng quát được đào tạo chính quy, có nhiều năm kinh nghiệm, cam kết điều trị đúng, đủ và chuẩn quy trình y khoa nghiêm ngặt nhất cho khách hàng của mình.
-                </div>
-                <a class="button" href="/">
-                    xem thêm
-                </a>
-            </div>
-            <div class="cols d_4_cols t_4_cols m_1_cols">
-                <img src="<?php echo DTTL_THEME_URL_IMG; ?>/trong-rang-su.jpg" alt="">
-                <div class="heading">
-                    Trồng răng sứ
-                </div>
-                <div class="text">
-                    Với đội ngũ Bác sĩ chuyên môn cao, chuyên biệt về dịch vụ điều trị. Bác sĩ chuyên khoa Tổng quát được đào tạo chính quy, có nhiều năm kinh nghiệm, cam kết điều trị đúng, đủ và chuẩn quy trình y khoa nghiêm ngặt nhất cho khách hàng của mình.
-                </div>
-                <a class="button" href="/">
-                    xem thêm
-                </a>
-            </div>
-            <div class="cols d_4_cols t_4_cols m_1_cols">
-                <img src="<?php echo DTTL_THEME_URL_IMG; ?>/tram-rang-tham-my.jpg" alt="">
-                <div class="heading">
-                    Mặt dán sứ
-                </div>
-                <div class="text">
-                    Với đội ngũ Bác sĩ chuyên môn cao, chuyên biệt về dịch vụ điều trị. Bác sĩ chuyên khoa Tổng quát được đào tạo chính quy, có nhiều năm kinh nghiệm, cam kết điều trị đúng, đủ và chuẩn quy trình y khoa nghiêm ngặt nhất cho khách hàng của mình.
-                </div>
-                <a class="button" href="/">
-                    xem thêm
-                </a>
-            </div>
-            <div class="cols d_4_cols t_4_cols m_1_cols">
-                <img src="<?php echo DTTL_THEME_URL_IMG; ?>/implant.jpg" alt="">
-                <div class="heading">
-                    Trồng răng implant
-                </div>
-                <div class="text">
-                    Với đội ngũ Bác sĩ chuyên môn cao, chuyên biệt về dịch vụ điều trị. Bác sĩ chuyên khoa Tổng quát được đào tạo chính quy, có nhiều năm kinh nghiệm, cam kết điều trị đúng, đủ và chuẩn quy trình y khoa nghiêm ngặt nhất cho khách hàng của mình.
-                </div>
-                <a class="button" href="/">
-                    xem thêm
-                </a>
-            </div>
-            <div class="cols d_4_cols t_4_cols m_1_cols">
-                <img src="<?php echo DTTL_THEME_URL_IMG; ?>/tram-rang-tham-my.jpg" alt="">
-                <div class="heading">
-                    Răng giả tháo lắp
-                </div>
-                <div class="text">
-                    Với đội ngũ Bác sĩ chuyên môn cao, chuyên biệt về dịch vụ điều trị. Bác sĩ chuyên khoa Tổng quát được đào tạo chính quy, có nhiều năm kinh nghiệm, cam kết điều trị đúng, đủ và chuẩn quy trình y khoa nghiêm ngặt nhất cho khách hàng của mình.
-                </div>
-                <a class="button" href="/">
-                    xem thêm
-                </a>
-            </div>
-            <div class="cols d_4_cols t_4_cols m_1_cols">
-                <img src="<?php echo DTTL_THEME_URL_IMG; ?>/nieng-rang-mac-cai.jpg" alt="">
-                <div class="heading">
-                    Niềng răng mắc cài
-                </div>
-                <div class="text">
-                    Với đội ngũ Bác sĩ chuyên môn cao, chuyên biệt về dịch vụ điều trị. Bác sĩ chuyên khoa Tổng quát được đào tạo chính quy, có nhiều năm kinh nghiệm, cam kết điều trị đúng, đủ và chuẩn quy trình y khoa nghiêm ngặt nhất cho khách hàng của mình.
-                </div>
-                <a class="button" href="/">
-                    xem thêm
-                </a>
-            </div>
-            <div class="cols d_4_cols t_4_cols m_1_cols">
-                <img src="<?php echo DTTL_THEME_URL_IMG; ?>/nieng-rang-trong-suot.jpg" alt="">
-                <div class="heading">
-                    Niềng răng trong suốt
-                </div>
-                <div class="text">
-                    Với đội ngũ Bác sĩ chuyên môn cao, chuyên biệt về dịch vụ điều trị. Bác sĩ chuyên khoa Tổng quát được đào tạo chính quy, có nhiều năm kinh nghiệm, cam kết điều trị đúng, đủ và chuẩn quy trình y khoa nghiêm ngặt nhất cho khách hàng của mình.
-                </div>
-                <a class="button" href="/">
-                    xem thêm
-                </a>
-            </div>
-            <div class="cols d_4_cols t_4_cols m_1_cols">
-                <img src="<?php echo DTTL_THEME_URL_IMG; ?>/kham-tu-van-mien-phi.jpg" alt="">
-                <div class="heading">
-                    Khám tư vấn miễn phí
-                </div>
-                <div class="text">
-                    Với đội ngũ Bác sĩ chuyên môn cao, chuyên biệt về dịch vụ điều trị. Bác sĩ chuyên khoa Tổng quát được đào tạo chính quy, có nhiều năm kinh nghiệm, cam kết điều trị đúng, đủ và chuẩn quy trình y khoa nghiêm ngặt nhất cho khách hàng của mình.
-                </div>
-                <a class="button" href="/">
+                <a class="button" href="<?php the_permalink(); ?>">
                     xem thêm
                 </a>
             </div>
 
+
+            <?php
+                    endwhile;
+                endif;
+                wp_reset_postdata();// reset lại đối tương wp_query
+            ?>
         </div>
     </div>
     <a name='priceTable'></a>
     <div id="priceTable"  class="section">
-        
-        <img src="" alt="" class="background hide">
-        <!-- <h3>bảng giá nha khoa Tims</h3> -->
+
+        <h3>bảng giá nha khoa Tims</h3>
         <div class="wrapper">
-            <img src="<?php echo DTTL_THEME_URL_IMG; ?>/banggiadichvu.jpg" alt="">
+            <img src="<?php echo DTTL_THEME_URL_IMG; ?>/bang-gia.png" alt="">
         </div>
     </div>
     <a name='about'></a>
@@ -183,7 +75,7 @@ $upload_dir = wp_upload_dir();
             <div class="cols d_2_cols t_2_cols m_1_cols center_box">
                 <img src="<?php echo DTTL_THEME_URL_IMG; ?>/11.jpg" alt="">
             </div>
-            <div class="cols d_2_cols t_2_cols m_1_cols">
+            <div class="cols d_2_cols t_2_cols m_1_cols cols_center">
                 <div class="heading outstanding">TIMS Dental - Luôn làm tốt hơn!</div>
                 <div class="text">
                     <p>Mang đến sự trải nghiệm tối giản, sử dụng công nghệ thông minh, dịch vụ nhanh chóng, thấú cảm với khách hàng, an toàn tuyệt đối.</p>
@@ -207,7 +99,7 @@ $upload_dir = wp_upload_dir();
             <div class="cols d_2_cols t_2_cols m_1_cols center_box">
                 <img src="<?php echo DTTL_THEME_URL_IMG; ?>/22.jpg" alt="">
             </div>
-            <div class="cols d_2_cols t_2_cols m_1_cols">
+            <div class="cols d_2_cols t_2_cols m_1_cols cols_center">
                 <div class="heading outstanding">Trang thiết bị</div>
                 <div class="text">
                     <p>Đầu tư vào công nghệ quét dấu hiện đại nhất thế giới – Máy iTero 5D cho thấy trước kết quả chỉnh nha và theo dõi tiến trình dịch chuyển răng một cách chính xác. Quét dấu toàn hàm chỉ trong vài phút, phát hiện sớm các bệnh lý răng miệng, giúp lưu trữ hồ sơ 3D, đồng thời ứng dụng thuật toán “số hóa nụ cười” tối ưu kế hoạch chỉnh nha nhanh chóng, hiệu quả.</p>
@@ -226,7 +118,7 @@ $upload_dir = wp_upload_dir();
             <div class="cols d_2_cols t_2_cols m_1_cols center_box">
                 <img src="https://thumbs.dreamstime.com/b/handsome-cheerful-male-doctor-stock-vector-cartoon-character-set-three-poses-illustration-204326741.jpg" alt="">
             </div>
-            <div class="cols d_2_cols t_2_cols m_1_cols">
+            <div class="cols d_2_cols t_2_cols m_1_cols cols_center">
 
                 <div class="text">
                     <p>Tại nha khoa TIMS chúng tôi không chỉ có một mà là cả một đội ngũ Y – Bác sĩ cùng nhau lên kế hoạch và điều trị cho khách hàng. Chúng tôi nghiên cứu, thống nhất và đưa ra một kế hoạch điều trị tối ưu có kết quả lâu dài và tiết kiệm chi phí nhất.</p>
