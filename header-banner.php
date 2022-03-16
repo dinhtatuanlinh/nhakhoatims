@@ -1,4 +1,4 @@
-<div id="banner">
+<!-- <div id="banner">
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -9,7 +9,10 @@
                 </div>
             </div>
         </div>
-        <!-- Add Pagination -->
+        
         <div class="swiper-pagination"></div>
     </div>
+</div> -->
+<div id="banner">
+    <video src="<?php echo DTTL_THEME_URL_IMG; ?>/video-anh-nen-desktop.mp4" autoplay muted loop></video>
 </div>
