@@ -63,7 +63,8 @@ $upload_dir = wp_upload_dir();
 
         <h3>bảng giá nha khoa Tims</h3>
         <div class="wrapper">
-            <img src="<?php echo DTTL_THEME_URL_IMG; ?>/bang-gia.png" alt="">
+            <img src="<?php echo DTTL_THEME_URL_IMG; ?>/1.png" alt="">
+            <img src="<?php echo DTTL_THEME_URL_IMG; ?>/2.png" alt="">
         </div>
     </div>
     <a name='about'></a>
