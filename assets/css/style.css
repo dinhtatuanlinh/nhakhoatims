@@ -1,6 +1,6 @@
 @font-face {
-    font-family: Dongle;
-    src: url(../fonts/Dongle-Regular.ttf);
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
 }
 
 * {
@@ -84,8 +84,9 @@ html {
     text-align: center;
     text-transform: capitalize;
     color: var(--text-color);
-    font-size: 32px;
+    font-size: 20px;
     margin: 5px 0;
+    font-weight: bold;
 }
 .outstanding {
     border-radius: 8px;
@@ -109,6 +110,8 @@ html {
 .section .text{
     text-align: justify;
     color: var(--text-color);
+    font-size: 17px;
+    line-height: 1.1;
 }
 .section .text p{
     margin: 10px
@@ -178,7 +181,7 @@ html {
 }
 
 body {
-    font-family: Dongle, "Courier New", Courier, monospace;
+    font-family: Roboto, "Courier New", Courier, monospace;
     background-color: #fff;
     /* background-size: cover; */
     /* background-image: url(../imgs/B1.jpg); */
@@ -310,6 +313,10 @@ li > strong{
 
 footer{
     border-top: 2px solid var(--main-bg-color);
+}
+.main-content {
+    font-size: 17px;
+    line-height: 1.1;
 }
 .typewriter {
     position: absolute;
