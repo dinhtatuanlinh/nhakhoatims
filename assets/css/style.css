@@ -1,0 +1,450 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-bg-color: #F58634;
+    --button-color: #f6c80f;
+    --border-color: #ccc;
+    --text-color: #206A5D;
+    /* var(--main-bg-color) */
+}
+.text_color{
+    color: var(--text-color);
+}
+.main_bg_color{
+    background-color: var(--main-bg-color);
+}
+.button_color{
+    background-color: var(--button-color)
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.hide {
+    display: none !important;
+}
+.right{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    
+}
+.wrapper > img{
+    width: 100%;
+}
+.center_box{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.Jus_con_center{
+    justify-content: center !important; 
+}
+.section{
+    width: 100%;
+    position: relative;
+}
+.section h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 26px;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.section h3::before{
+    content: '';
+    width: 25%;
+    border-top: 2px solid var(--button-color);
+    margin: 0 20px;
+}
+.section h3::after{
+    content: '';
+    width: 25%;
+    border-top: 2px solid var(--button-color);
+    margin: 0 20px;
+}
+
+.section .heading{
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--text-color);
+    font-size: 20px;
+    margin: 5px 0;
+    font-weight: bold;
+}
+.outstanding {
+    border-radius: 8px;
+    padding:10px;
+    border: 4px solid var(--button-color);
+    font-size: 40px !important;
+}
+.section .button{
+    background-color: var(--button-color);
+    width: 50%;
+    height: 40px;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bolder;
+    text-transform: capitalize;
+    margin: 5px 0;
+}
+.section .text{
+    text-align: justify;
+    color: var(--text-color);
+    font-size: 17px;
+    line-height: 1.1;
+}
+.section .text p{
+    margin: 10px
+}
+.section .text ul{
+    margin: 10px
+}
+.background{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.g_cols_reverse{
+    flex-direction: row-reverse;
+}
+.g_cols{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.cols {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.cols_center {
+    justify-content: center !important;
+}
+.cols img{
+    width: 100%;
+}
+
+body {
+    font-family: Roboto, "Courier New", Courier, monospace;
+    background-color: #fff;
+    /* background-size: cover; */
+    /* background-image: url(../imgs/B1.jpg); */
+    /* background-repeat: no-repeat;
+    background-attachment: fixed; */
+    max-width: 1920px;
+    margin: 0 auto;
+    font-size: 25px;
+    line-height: 0.8;
+}
+#upper {
+    background: var(--main-bg-color);
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 100;
+    top: 0;
+}
+
+#upper .background_upper {
+    background-image: url(../../imgs/05.png);
+    background-repeat: repeat-x;
+    background-size: 50px 35px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 35px;
+    width: 100%;
+}
+
+#upper .wrapper .phone img {
+    width: 16px;
+    height: 16px;
+    margin: 0 5px;
+}
+
+#upper .wrapper {
+    position: absolute;
+    text-transform: uppercase;
+    z-index: 2;
+    max-width: 1200px !important;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: move 7s linear 2s infinite;
+}
+
+@keyframes move {
+    0% {
+        left: -200px;
+        top: 0px;
+    }
+    25% {
+        left: 0px;
+        top: 0px;
+    }
+    50% {
+        left: 200px;
+        top: 0px;
+    }
+    75% {
+        left: 0px;
+        top: 0px;
+    }
+    100% {
+        left: -200px;
+        top: 0px;
+    }
+}
+
+#upper .wrapper .phone {
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+}
+
+#upper .wrapper .phone label {
+    font-weight: 600;
+}
+
+#upper .wrapper .phone label a {
+    text-decoration: none;
+    color: #000;
+}
+#banner video{
+    width: 100%;
+}
+#top #navi{
+    height: 80px;
+    position: relative;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+}
+#top #navi .wrapper{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#top #navi #logo {
+    height: 90%;
+}
+#top #navi #logo img{
+    height: 100%;
+}
+#top #navi nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#top #navi nav ul li{
+    list-style: none;
+    padding: 10px 10px;
+}
+#top #navi nav ul li a{
+    text-decoration: none;
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+li > strong{
+    color: var(--button-color);
+    font-size: 32px;
+    font-weight: bold;
+}
+
+footer{
+    border-top: 2px solid var(--main-bg-color);
+}
+.main-content {
+    font-size: 17px;
+    line-height: 1.1;
+}
+.typewriter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.typewriter h2 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    font-size: 50px;
+    animation: 
+      typing 3.5s steps(40, end) infinite,
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+/* ###################################################################################################### */
+
+/* desktop  */
+
+@media screen and (min-width: 1201px) {
+    .hide-desktop {
+        display: none !important;
+    }
+    .d_34_cols{
+        width: 74%;
+        margin: 10px 0.5%
+    }
+    .d_14_cols{
+        width: 24%;
+        margin: 10px 0.5%;
+    }
+    .d_4_cols {
+        width: 24%;
+        margin: 10px 0.5%;
+    }
+    .d_3_cols {
+        width: 32.3333%;
+        margin: 10px 0.5%;
+    }
+    .d_2_cols {
+        width: 49%;
+        margin: 10px 0.5%;
+    }
+    .d_1_cols {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+}
+
+/* end desktop  */
+
+/* ###################################################################################################### */
+
+/* tablet  */
+
+@media screen and (min-width: 840px) and (max-width: 1200px) {
+    .hide-tablet {
+        display: none !important;
+    }
+    .section{
+        padding: 0 5px
+    }
+    .t_34_cols{
+        width: 74%;
+        margin: 10px 0.5%
+    }
+    .t_14_cols{
+        width: 24%;
+        margin: 10px 0.5%;
+    }
+    .t_4_cols {
+        width: 24%;
+        margin: 10px 0.5%;
+    }
+    .t_3_cols {
+        width: 32.3333%;
+        margin: 10px 0.5%;
+    }
+    .t_2_cols {
+        width: 49%;
+        margin: 10px 0.5%;
+    }
+    .t_1_cols {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* end tablet  */
+
+/* ###################################################################################################### */
+
+/* mobile  */
+
+@media screen and (max-width: 839px) {
+    .section{
+        padding: 0 5px
+    }
+    .hide-mobile {
+        display: none !important;
+    }
+    .m_2_cols {
+        width: 49%;
+        margin: 10px 0.5%;
+    }
+    .m_1_cols {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* end mobile  */
